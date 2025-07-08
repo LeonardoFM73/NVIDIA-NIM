@@ -28,13 +28,21 @@ def chat():
         "Authorization": f"Bearer {NVIDIA_API_KEY}"
     }
 
-    print("DEBUG - Sending to NVIDIA:", payload)
-    print("DEBUG - With headers:", headers)
-
-    response = requests.post(NVIDIA_URL, json=payload, headers=headers)
-    print("DEBUG - NVIDIA returned:", response.status_code, response.text)
+    # Debug print
+    print("=== ENV ===")
+    print("NVIDIA_API_KEY:", NVIDIA_API_KEY)
+    print("Headers:", headers)
+    print("Payload:", payload)
     
-    return jsonify(response.json())
+    try:
+        response = requests.post(NVIDIA_URL, json=payload, headers=headers, timeout=20)
+        print("=== NVIDIA RESPONSE ===")
+        print(response.status_code, response.text)
+        return jsonify(response.json())
+    except Exception as e:
+        print("=== ERROR CALLING NVIDIA ===")
+        print(str(e))
+        return jsonify({"error": str(e)})
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=10000)
