@@ -28,7 +28,12 @@ def chat():
         "Authorization": f"Bearer {NVIDIA_API_KEY}"
     }
 
+    print("DEBUG - Sending to NVIDIA:", payload)
+    print("DEBUG - With headers:", headers)
+
     response = requests.post(NVIDIA_URL, json=payload, headers=headers)
+    print("DEBUG - NVIDIA returned:", response.status_code, response.text)
+    
     return jsonify(response.json())
 
 if __name__ == "__main__":
