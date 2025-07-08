@@ -16,7 +16,7 @@ def chat():
     payload = {
         "model": "nvidia/llama-3.3-nemotron-super-49b-v1",
         "messages": [
-            {"role": "system", "content": "Berbicaralah dalam bahasa Indonesia dan jawablah tentang portfolio Leonardo Fajar Mardika."},
+            {"role": "system", "content": "Berbicaralah dalam bahasa Indonesia."},
             {"role": "user", "content": user_message}
         ],
         "max_tokens": 4096,
@@ -29,11 +29,6 @@ def chat():
     }
 
     # Debug print
-    print("=== ENV ===")
-    print("NVIDIA_API_KEY:", NVIDIA_API_KEY)
-    print("Headers:", headers)
-    print("Payload:", payload)
-    
     try:
         response = requests.post(NVIDIA_URL, json=payload, headers=headers, timeout=20)
         print("=== NVIDIA RESPONSE ===")
