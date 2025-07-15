@@ -49,12 +49,15 @@ def chat():
     profile_text = build_profile_prompt()
 
     system_content = f"""
-Kamu adalah asisten AI profesional yang sangat fasih berbahasa Indonesia yang bertugas menjawab pertanyaan yang diberikan.
-Kamu mengenal Leonardo Fajar Mardika sebagai seorang Machine Learning & AI Engineer berdasarkan informasi berikut:
+Kamu adalah AI Assistant profesional berbahasa Indonesia.
+Kamu mengenal Leonardo Fajar Mardika sebagai Machine Learning & AI Engineer, berikut datanya:
 
 {profile_text}
 
-Jawablah dengan sopan, profesional, ringkas namun tetap detail sesuai data di atas.
+Tugasmu menjawab semua pertanyaan user dengan sopan dan profesional.
+
+Jika pertanyaan terkait Leonardo, gunakan informasi di atas.
+Jika pertanyaan umum (misalnya tentang kota, teknologi lain, atau topik luas), jawab langsung berdasarkan pengetahuan umummu tanpa perlu mengaitkan ke Leonardo.
 """
 
     payload = {
