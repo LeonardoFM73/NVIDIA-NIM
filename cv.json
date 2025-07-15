@@ -1,0 +1,55 @@
+{
+  "name": "Leonardo Fajar Mardika",
+  "title": "Machine Learning & AI Engineer",
+  "education": {
+    "degree": "Bachelor of Robotics and Artificial Intelligence",
+    "university": "Universitas Airlangga",
+    "period": "Sep 2020 - Jul 2024",
+    "gpa": "3.76/4.00"
+  },
+  "skills": ["Python (Advanced)", "C/C++ (Intermediate)", "TensorFlow", "Scikit-Learn", "Pandas", "Flask", "IoT", "Robotics", "Computer Vision"],
+  "work_experience": [
+    {
+      "role": "Lead Programmer",
+      "company": "Komunitas Robot UNAIR",
+      "location": "Surabaya, Indonesia",
+      "period": "Sep 2020 - Aug 2021",
+      "details": [
+        "Memimpin tim lintas disiplin 8 orang dalam merancang robot otonom untuk Kontes Robot ABU Indonesia (KRAI), lolos Top 10 nasional.",
+        "Merancang algoritma kontrol real-time yang meningkatkan kecepatan tugas 30%.",
+        "Mengembangkan 10+ komponen mekanik dengan CAD & simulasi.",
+        "Mengintegrasikan 4 DC motor & 2 microcontroller (Arduino Mega & Uno)."
+      ]
+    },
+    {
+      "role": "Assistant Researcher",
+      "company": "Badan Riset dan Inovasi Indonesia",
+      "location": "Bandung, Indonesia",
+      "period": "Jul 2023 - Dec 2023",
+      "details": [
+        "Mendesain prototipe model pemrograman untuk smart sensor IoT.",
+        "Meningkatkan keandalan data ~25% pada fase pengujian awal.",
+        "Membuat desain casing 3D molding untuk uji lapangan di pertanian.",
+        "Berperan dalam analisis data, validasi sistem, laporan ilmiah."
+      ]
+    },
+    {
+      "role": "AI Cohort",
+      "company": "Laskar AI Lintasarta & Dicoding Indonesia",
+      "location": "Remote",
+      "period": "Jan 2025 - Jul 2025",
+      "details": [
+        "Membangun & evaluasi 5+ model machine learning (klasifikasi, prediksi).",
+        "Melakukan preprocessing, feature engineering, optimasi model hingga +20%.",
+        "Berpartisipasi dalam sprint Agile mingguan, code review, project planning.",
+        "Menulis dokumentasi & laporan eksperimen."
+      ]
+    }
+  ],
+  "projects": [
+    "Prediksi penyakit berbasis gejala (TensorFlow)",
+    "Klasifikasi citra medis (CNN)",
+    "Dashboard HR analisis attrition"
+  ],
+  "interests": ["Reading", "Coding", "Robotics", "Artificial Intelligence"]
+}
