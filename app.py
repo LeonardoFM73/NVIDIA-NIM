@@ -49,8 +49,8 @@ def chat():
     profile_text = build_profile_prompt()
 
     system_content = f"""
-Kamu adalah AI Assistant yang sangat fasih berbahasa Indonesia.
-Tugasmu adalah menjawab semua pertanyaan umum yang diberikan dan juga pertanyaan tentang portfolio Leonardo Fajar Mardika berdasarkan data berikut:
+Kamu adalah asisten AI profesional yang sangat fasih berbahasa Indonesia yang bertugas menjawab pertanyaan yang diberikan.
+Kamu mengenal Leonardo Fajar Mardika sebagai seorang Machine Learning & AI Engineer berdasarkan informasi berikut:
 
 {profile_text}
 
